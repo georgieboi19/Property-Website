@@ -1,0 +1,84 @@
+<!doctype HTML>
+<html lang = "en">
+<head>
+  <title>YouMove - The property search site</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://code.jquery.com 'unsafe-inline';">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+  <nav>
+  <ul>
+    <li><a href="#"rel="noopener"><b>Home</a></li>
+    <li><a href="#" rel="noopener">Buy</a></li>
+    <li><a href="#" rel="noopener">Sell</a></li>
+    <li><a href="#" rel="noopener">Stats</a></li>
+    <li><a href="#" rel="noopener">Contact us</b></a></li>
+  </ul>
+</nav>
+  <div id="image_container"><img src="images/frontpage.jpg">
+    <div class="container" id="container">
+  <label for="type">Property Type</label>
+  <select name="type" id="type">
+    <option selected="selected" value="any">Any</option>
+    <option value="House">House</option>
+    <option value="Flat">Flat</option>
+  </select><br><br>
+  <label for="min_price">Price(Min)</label>
+  <select name="min_price" id="min_price">
+    <option selected="selected" value="any">Any</option>
+    <option value="0">£0</option>
+    <option value="100000">£100,000</option>
+    <option value="250000">£250,000</option>
+    <option value="500000">£500,000</option>
+    <option value="750000">£750,000</option>
+    <option value="1000000">£1,000,000</option>
+  </select>
+  <label for="max_price">Max</label>
+  <select name="max_price" id="max_price">
+    <option selected="selected" value="any">Any</option>
+    <option value="0">£0</option>
+    <option value="100000">£100,000</option>
+    <option value="250000">£250,000</option>
+    <option value="500000">£500,000</option>
+    <option value="750000">£750,000</option>
+    <option value="1000000">£1,000,000</option>
+  </select><br><br>
+  <label for="min_rooms">Bedrooms(Min)</label>
+  <select name="min_rooms" id="min_rooms">
+    <option selected="selected" value="any">Any</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+  <label for="max_rooms">Max</label>
+  <select name="max_rooms" id="max_rooms">
+    <option selected="selected" value="any">Any</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select><br><br>
+  <p>Date added: <input type="text" id="dateadded"></p>
+  <button id="search">Search properites</button>
+  <button id="favourite_display">View favourites</button>
+  <br>
+  </div>
+  </div>
+  <div id=clear></div>
+  <section id="property_container">
+
+<p id="placeholder"><p id="search_number"></p></p>
+</section>
+
+
+</body>
+</html>
